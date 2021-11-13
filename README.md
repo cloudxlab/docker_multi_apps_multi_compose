@@ -27,6 +27,10 @@ vi app.py
 
 cache = redis.Redis(host='172.21.0.3', port=6379)
 
+or use just the name of the redis container
+
+cache = redis.Redis(host='redis_host', port=6379)
+
 # start flash app container
 
 docker-compose up --build
